@@ -3,17 +3,15 @@
   <head>
     <title>Konverter Suhu</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <!--Navigation bar-->
     <header id="navbar">
-      <img src="celsius-to-fahrenheit(clr).png" class="logo"style="float: left;">
-      <H1>Konverter Suhu</H1>
-      <nav id="navigation">
-        <a href="">Lihat Hasil</a>
-        <a href="">Lihat Rumus</a>
-      </nav>
+        <div class="div-heading">
+         <img src="celsius-to-fahrenheit(clr).png" class="logo"style="float: left;">
+         <H1>Konverter Suhu</H1>
+        </div>
     <!--Navigation bar end-->
     </header>
     <!--Container-->
@@ -22,26 +20,27 @@
       <table>
         <tr>
             <td>
-                <form method="post" action="#">
-                    <input type="number" name="angka" placeholder="Input Angka">
-                    <button type="Konversi">Konversi</button>
-                    <button type="Ulang">Atur Ulang</button>
-                    <button type="Reverse">Reverse</button>
-                  </form>
+                <p>Celsius (°C)</p>
+                <input id="InputCelsius" type="number" placeholder="Input Angka">
             </td>
           </tr>
           <tr>
             <td>
-                <form target="target" action="#">
-                    <input type="number" name="angka" placeholder="Hasil Konversi">
-                  </form>
+                <button id="btn-Konversi" type="Konversi" onclick="ConvertCelsius()">Konversi</button>
+                <button id="btn-Reset" type="Reset" onclick="ResetFields()">Reset</button>
+                <button id="btn-Reverse" type="Reverse" onclick="ReverseConversion()">Reverse</button>
             </td>
           </tr>
           <tr>
             <td>
-                <form target="target" action="#">
-                    <input type="number" name="angka" placeholder="Cara Kalkulasi">
-                  </form>
+                <p>Fahrenheit (°F)</p>
+                <input id="OutputFahrenheit" type="number" placeholder="Hasil Konversi" oninput="ConvertCelsius()">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <p>Cara Kalkulasi</p>
+                <div class="boxRumus">(Suhu Celsius * 9 / 5) + 32</div>
             </td>
           </tr>
       </table>
