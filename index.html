@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Konverter Suhu</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <header id="navbar">
+      <img src="celsius-to-fahrenheit(clr).png" class="logo"style="float: left;">
+      <H1>Konverter Suhu</H1>
+      <nav id="navigation">
+        <a href="">Lihat Hasil</a>
+        <a href="">Lihat Rumus</a>
+      </nav>
+    <!--Navigation bar end-->
+    </header>
+    <!--Container-->
+    <container id="container">
+      <p>Masukkan suhu derajat Celcius(°C) lalu klik tombol Konversi untuk merubah ke Fahrenheit(°F) </p>
+      <table>
+        <tr>
+            <td>
+                <form method="post" action="#">
+                    <input type="number" name="angka" placeholder="Input Angka">
+                    <button type="Konversi">Konversi</button>
+                    <button type="Ulang">Atur Ulang</button>
+                    <button type="Reverse">Reverse</button>
+                  </form>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <form target="target" action="#">
+                    <input type="number" name="angka" placeholder="Hasil Konversi">
+                  </form>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <form target="target" action="#">
+                    <input type="number" name="angka" placeholder="Cara Kalkulasi">
+                  </form>
+            </td>
+          </tr>
+      </table>
+    </container>
+</html>
